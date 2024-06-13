@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pfcbmldcyttq/public_html/assets/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp static/style.css $DEPLOYPATH
+
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pfcbmldcyttq/public_html/assets/
+    - /bin/cp -R static/images $DEPLOYPATH
